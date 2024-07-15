@@ -17,17 +17,25 @@
       <div>
         <h1>JavaScript APIs</h1>
         <p>
-          Open the Browser Console to view your work (Right-Click => Inspect or
-          fn+F12)
+          Let's make some fun Gifs
         </p>
         <div id="inputContainer">
+          <form id="form1">
           <label for="searchWord">Giphy Search:</label>
-          <input style="margin: 2rem" type="text" id="searchWord" />
+          <input 
+          style="margin: 2rem" 
+          type="text" 
+          id="searchWord" 
+          required minlength="2"
+          />
           <button id="submitSearch">Giphy by Search</button>
+          </form>
+          <p id="feedBackPara">Feedback Paragraph</p>
         </div>
 
         <div id="imageContainer" style="max-width: 680px">
           <img
+            id="image1"
             src="#"
             alt="Giphy Selection"
             style="width: 100%; height: auto"
